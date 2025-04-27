@@ -55,7 +55,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: #ffdb70;
-  --vegas-gold: hsl(45, 54%, 58%);
+  --vegas-gold: #ceb15a;
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -144,9 +144,15 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+html { 
+  font-family: var(--ff-poppins); 
+  overflow-y: scroll;
+}
 
-body { background: var(--smoky-black); }
+body { 
+  background: var(--smoky-black); 
+  overflow-y: scroll;
+}
 
 
 
@@ -793,7 +799,7 @@ main {
 
 .timeline-text {
   color: var(--light-gray);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-f300);
   line-height: 1.6;
 }
 
@@ -807,6 +813,7 @@ main {
 .skills-list { padding: 20px; }
 
 .skills-list {
+  list-style: none;
   font-size: var(--fs-6);
   margin-left: 45px;
   margin-right: 40px;
@@ -833,17 +840,7 @@ main {
   color: var(--vegas-gold) !important; /* #007bff in RGB */
 }
 
-.skills-item::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -33px;
-  height: 6px;
-  width: 6px;
-  background: var(--text-gradient-yellow);
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
-}
+
 
 
 /*-----------------------------------*\
