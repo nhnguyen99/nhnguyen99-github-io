@@ -522,7 +522,11 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
-
+.underline-link {
+  text-decoration: underline;
+  color: inherit; /* Optional: Keeps the text color consistent */
+  cursor: pointer; /* Optional: Adds a pointer cursor to mimic a link */
+}
 
 /**
  * #service 
